@@ -1,0 +1,27 @@
+security:
+  oauth2:
+    client:
+      clientId: 4477f2bc8aae85e3d0b8
+      clientSecret: 48934070a6841f230be99953093213f1277be92e
+      accessTokenUri: https://github.com/login/oauth/access_token
+      userAuthorizationUri: https://github.com/login/oauth/authorize
+      clientAuthenticationScheme: form
+    resource:
+      userInfoUri: https://api.github.com/user
+      preferTokenInfo: false
+      
+############## NOT WORKING ################      
+#security:
+#  oauth2:
+#    client:
+#      clientId: clientId
+##      clientSecret: secret
+#      clientSecret: "{bcrypt}$2a$10$vCXMWCn7fDZWOcLnIEhmK.74dvK1Eh8ae2WrWlhr2ETPLoxQctN4."
+#      accessTokenUri: http://localhost:9010/oauth/token
+#      userAuthorizationUri: http://localhost:9010/oauth/authorize
+#      clientAuthenticationScheme: form
+#    resource:
+#      userInfoUri: http://localhost:9010/users/me
+#      preferTokenInfo: false
+      
+            
