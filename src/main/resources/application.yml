@@ -12,16 +12,21 @@ security:
       
 ############## NOT WORKING ################      
 #security:
+##  basic:
+##    enabled: false
 #  oauth2:
 #    client:
 #      clientId: clientId
-##      clientSecret: secret
-#      clientSecret: "{bcrypt}$2a$10$vCXMWCn7fDZWOcLnIEhmK.74dvK1Eh8ae2WrWlhr2ETPLoxQctN4."
+#      clientSecret: secret
+##      clientSecret: "{bcrypt}$2a$10$vCXMWCn7fDZWOcLnIEhmK.74dvK1Eh8ae2WrWlhr2ETPLoxQctN4."
 #      accessTokenUri: http://localhost:9010/oauth/token
 #      userAuthorizationUri: http://localhost:9010/oauth/authorize
-#      clientAuthenticationScheme: form
+#      client-authentication-scheme: header
+#      grant-type: authorization_code
+##      clientAuthenticationScheme: form
 #    resource:
 #      userInfoUri: http://localhost:9010/users/me
-#      preferTokenInfo: false
-      
+##      preferTokenInfo: false
+
+
             

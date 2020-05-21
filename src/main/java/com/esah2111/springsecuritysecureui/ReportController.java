@@ -75,12 +75,13 @@ public static class TollUsage {
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http
+		http.antMatcher("/**")
 		.authorizeRequests()
 			.antMatchers("/", "/login**")
 			.permitAll()
-		.anyRequest()
+			.anyRequest()
 			.authenticated();
 	}
-
+	
+	
 }
